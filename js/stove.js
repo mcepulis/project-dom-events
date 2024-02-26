@@ -36,11 +36,13 @@ let clicks = [0, 0, 0, 0];
 
 function burnerOnOff(arrIDX, knobNumber, burnerNumber) {
     if (clicks[arrIDX] === 0) {
+        knobNumber.style.transition = "background-color 2s ease"; 
         knobNumber.style.backgroundColor = "red";
         burnerNumber.style.border = "3px solid blue";
         
         clicks[arrIDX]++;
     } else {
+        knobNumber.style.transition = "background-color 2s ease"; 
         knobNumber.style.backgroundColor = "";
         burnerNumber.style.border = ""
         clicks[arrIDX] = 0;
