@@ -1,3 +1,6 @@
+import { header } from "./header.js";
+header();
+
 const plusDOM = document.getElementById('plus');
 const minusDOM = document.getElementById('minus');
 const screenDOM = document.getElementById('screen');

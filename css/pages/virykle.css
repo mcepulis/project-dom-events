@@ -1,0 +1,52 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.virykle {
+    width: 19.2rem;
+    border: 0.1rem solid #000;
+    border-radius: 0.2rem;
+}
+.virykle > .top {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.virykle .skyle {
+    width: 8rem;
+    height: 8rem;
+    background-color: #ccc;
+    border-radius: 50%;
+    transition: all 5s;
+}
+.virykle .skyle.active {
+    background-color: #f00;
+    transition: all 2s;
+}
+.virykle > .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #eee;
+}
+.virykle .jungiklis {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0 50% 50% 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: all 1s;
+}
+.virykle .jungiklis:hover {
+    background-color: #aaa;
+}
+.virykle .jungiklis.active {
+    background-color: #f00;
+    transform: rotate(90deg);
+}
