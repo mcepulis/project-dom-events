@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/pages/kmi.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav"></nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">KMI page</h1>
+
+        <form>
+            <!-- kg/m2 -->
+            <div>
+                <label for="weight">Weight, kg</label>
+                <input id="weight" type="number" min="0.1" max="300" value="80" step="0.1" required>
+            </div>
+            <div>
+                <label for="height">Height, cm</label>
+                <input id="height" type="number" min="1" max="250" value="180" step="1" required>
+            </div>
+            <div class="btn-list">
+                <button type="submit">Calculate</button>
+                <button id="reset" type="reset" hidden>Reset</button>
+            </div>
+        </form>
+
+        <div class="content">
+            <h2 id="screen" style="display: none;" class="screen">Score: _</h2>
+        </div>
+    </main>
+
+    <script type="module" src="../js/kmi.js"></script>
+</body>
+
+</html>

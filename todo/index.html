@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/pages/todo.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav"></nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">TODO page</h1>
+
+        <form>
+            <div>
+                <label for="height">Task</label>
+                <input id="task" type="text" required>
+            </div>
+            <div class="btn-list">
+                <button type="submit">Create</button>
+                <button id="reset" type="reset" hidden>Reset</button>
+            </div>
+        </form>
+
+        <h2>Tasks for me to do:</h2>
+        <ul id="list"></ul>
+    </main>
+
+    <script type="module" src="../js/todo.js"></script>
+</body>
+
+</html>
