@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "tofixed": "node --watch js/tofixed.js",
     "dev": "dead-server --host=localhost --port=4810",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
